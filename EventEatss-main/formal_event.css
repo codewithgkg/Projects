@@ -1,0 +1,242 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+padding: 10px;
+text-align: center;
+background: #8b6ca2;
+color: white;
+width : 100%;
+}
+
+/* Increase the font size of the h1 element */
+.header {
+background: #8b6ca2;
+color: #fff;
+padding: 10px;
+
+}
+
+.header h1 {
+margin: 0;
+font-size: 45px;
+font-family: 'Times New Roman', Times, serif;
+text-align: center;
+}
+
+.navbar {
+background-color: #6d3c75;
+color: #fff;
+padding: 10px;
+text-decoration: none;
+}
+
+.navbar ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+font-size: 18px;
+}
+
+.navbar ul li {
+float: left;
+}
+
+.navbar ul li a {
+display: block;
+color: #fff;
+text-decoration: none;
+padding: 10px;
+}
+
+.navbar ul li:hover {
+background-color: #333;
+}
+
+.navbar ul li:hover ul {
+display: block;
+}
+
+.navbar ul ul {
+display: none;
+position: absolute;
+background-color: #333;
+}
+
+.navbar ul ul li {
+float: none;
+}
+
+.navbar ul ul li a {
+padding: 10px;
+}
+
+.navbar ul ul li a:hover {
+background-color: #555;
+}
+
+
+
+
+body {
+font-family: Arial, sans-serif;
+background-image: url('https://images.pexels.com/photos/255377/pexels-photo-255377.jpeg?cs=srgb&dl=pexels-miguel-%C3%A1-padri%C3%B1%C3%A1n-255377.jpg&fm=jpg');
+background-size: cover;
+
+}
+
+
+h1 {
+text-align: center;
+color: #333;
+}
+
+form {
+max-width: 500px;
+margin: 0 auto;
+padding: 20px;
+background-color: rgba(0, 0, 0, 0.5);
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+color: white;
+}
+
+label {
+display: block;
+margin-bottom: 10px;
+font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+textarea,
+select {
+width: 100%;
+padding: 8px;
+border-radius: 3px;
+border: 1px solid #ccc;
+}
+
+textarea {
+height: 100px;
+}
+
+select {
+height: 30px;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    background-color: #45a049;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+background-color: #367e39;
+text-decoration: none;
+}
+
+input[type="submit"]:focus {
+outline: none;
+}
+
+input[type="submit"]:active{
+    background-color: #45a049;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.error {
+color: #FF0000;
+font-size: 14px;
+}
+
+.success {
+color: #008000;
+font-size: 14px;
+}
+.h3{
+font-size: 30px;
+text-align: center;
+}
+.Explore{
+
+display: block;
+width: 100%;
+padding: 5px;
+background-color: #af56ca;
+border: none;
+border-radius: 3px;
+cursor: pointer;
+text-decoration: none;
+color: white;
+
+}
+
+.Explore:hover {
+background-color: #974fbe;
+text-decoration: none;
+}
+
+.Explore:focus {
+outline: none;
+text-decoration: none;
+}
+
+.Explore:active{
+    background-color: #974fbe;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.footer {
+background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+/* icons */
+
+.social-icons {
+margin-top: 20px;
+}
+
+.social-icons a {
+display: inline-block;
+width: 30px;
+height: 30px;
+background-color: #fff;
+color: #333;
+border-radius: 50%;
+line-height: 30px;
+margin: 0 5px;
+text-align: center;
+text-decoration: none;
+transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+background-color: #555;
+color: #fff;
+}
+
+.social-icons img {
+max-width: 100%;
+height: auto;
+}

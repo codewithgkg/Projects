@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Login to EventEats</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="signUpv.css">
+</head>
+
+<body>
+<div class="container">
+  <div class="wrapper">
+    <div class="title-text">
+      <div class="title login" style="color: white;">
+        Time to Login!
+      </div>
+      <div class="title signup" style="color: white;">
+        Get started!
+      </div>
+    </div>
+    <div class="form-container">
+      <div class="slide-controls">
+        <input type="radio" name="slide" id="login" checked>
+        <input type="radio" name="slide" id="signup">
+        <label for="login" class="slide login">Login</label>
+        <label for="signup" class="slide signup">Signup</label>
+        <div class="slider-tab"></div>
+      </div>
+      <div class="form-inner">
+        <form action="validatelogin.php" method="POST" class="login">
+          <div class="field">
+            <input type="text" name="login_email" placeholder="Email Address" required>
+          </div>
+          <div class="field">
+            <input type="password" id="password" name="password" pattern=".{6,}" title="Password must be at least 6 characters long" placeholder="password">
+          </div>
+          <div class="pass-link">
+            <a href="#">Forgot password?</a>
+          </div>
+          <div class="field btn">
+            <div class="btn-layer"></div>
+            <input type="submit" name="login_submit" value="Login">
+          </div>
+          <div class="signup-link" style="color: white;">
+            Not a member? <a href="">Signup now</a>
+          </div>
+        </form>
+        <form action="signupv1.php" method="POST" class="signup">
+          <div class="field">
+            <input type="text" name="signup_email" placeholder="Email Address" required>
+          </div>
+          <div class="field">
+            <input type="password" id="password" name="password" pattern=".{6,}" title="Password must be at least 6 characters long" placeholder="password">
+          </div>
+          <div class="field">
+            <input type="password" name="signup_confirm_password" placeholder="Confirm password" required>
+          </div>
+          <div class="field btn">
+            <div class="btn-layer"></div>
+            <input type="submit" name="signup_submit" value="Signup">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+  <script>
+    const loginText = document.querySelector(".title-text .login");
+    const loginForm = document.querySelector("form.login");
+    const loginBtn = document.querySelector("label.login");
+    const signupBtn = document.querySelector("label.signup");
+    const signupLink = document.querySelector("form .signup-link a");
+    signupBtn.onclick = function() {
+      loginForm.style.marginLeft = "-50%";
+      loginText.style.marginLeft = "-50%";
+    };
+    loginBtn.onclick = function() {
+      loginForm.style.marginLeft = "0%";
+      loginText.style.marginLeft = "0%";
+    };
+    signupLink.onclick = function() {
+      signupBtn.click();
+      return false;
+    };
+    
+const passwordInput = document.getElementById("password");
+const confirmInput = document.getElementById("confirm-password");
+
+confirmInput.addEventListener("input", function () {
+  if (passwordInput.value !== confirmInput.value) {
+    confirmInput.setCustomValidity("Passwords do not match");
+  } else {
+    confirmInput.setCustomValidity("");
+  }
+});
+
+  </script>
+  <p>&copy; <a href="Privacy and Policy.php" style="color: rgb(255, 255, 255);">Privacy and Policy.</a></p>
+</body>
+
+</html>

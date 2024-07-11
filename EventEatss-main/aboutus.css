@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    background-image: url('https://img.freepik.com/premium-vector/gradient-background-with-dynamic-shapes_23-2148215374.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: auto;
+    width: 100%;
+}
+/* nav bar ka css */
+.navbar {
+    background-color: #6d3c75;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+.navbar ul li {
+    float: left;
+}
+
+.navbar ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar ul li:hover {
+    background-color: #333;
+}
+
+.navbar ul li:hover ul {
+    display: block;
+}
+
+.navbar ul ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+}
+
+.navbar ul ul li {
+    float: none;
+}
+
+.navbar ul ul li a {
+    padding: 10px;
+}
+
+.navbar ul ul li a:hover {
+    background-color: #555;
+}
+
+
+
+/* footer css */ 
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+/* icons */
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 50%;
+    line-height: 30px;
+    margin: 0 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+.social-icons img {
+    max-width: 100%;
+    height: auto;
+}
+/* box */
+
+.transparent-box {
+background-color: rgba(0, 0, 0, 0.5); /* Set the background color with desired opacity */
+padding: 20px;
+color: #ffffff; /* Set the text color to white */
+}
+
